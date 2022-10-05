@@ -9,8 +9,8 @@ const historySchema = new Schema({
     },
     year: {
         type: Number,
-        minimumValue: 1993,
-        maximumValue: 2022,
+        min: 1993,
+        max: 2022,
         required: true
     },
     description: {

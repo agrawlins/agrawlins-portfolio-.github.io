@@ -1,7 +1,7 @@
 import React from "react"
 import {useNavigate, Link} from 'react-router-dom';
-import Logo from "../../Images/Psychonauts-Logo-Color.png"
-import HomeCard from "./HomeCard"
+import HomeCard from "../homeCard/homeCard"
+import './homeDisplay.css'
 
 const HomeDisplay = () => {
     const navigate = useNavigate()
@@ -9,25 +9,22 @@ const HomeDisplay = () => {
     return (
         <main className="homeDisplay">
             <div>
-                <img src={Logo} />
-            </div>
-            <div>
-                <button className="ugly--list" onClick={() => navigate("/characters")}>
+                <button className="ugly--list" onClick={() => navigate("/history")}>
                     <HomeCard
                         imgUrl = "https://psychonauts-api.herokuapp.com/images/api/characters/razputin-aquato.png"
-                        title = "Characters"
+                        title = "History"
                     />
                 </button>
-                <button className="ugly--list" onClick={() => navigate("/abilities")}>
+                <button className="ugly--list" onClick={() => navigate("/projects")}>
                     <HomeCard
                         imgUrl = "https://psychonauts-api.herokuapp.com/images/api/clairvoyance.png"
-                        title = "Abilities"
+                        title = "Projects"
                     />
                 </button>
-                <button className="ugly--list" onClick={() => navigate("/summary")}>
+                <button className="ugly--list" onClick={() => navigate("/contact")}>
                     <HomeCard
                         imgUrl = "https://psychonauts-api.herokuapp.com/images/api/characters/ford-cruller.png"
-                        title = "Summary"
+                        title = "Contact"
                     />
                 </button>
             </div>

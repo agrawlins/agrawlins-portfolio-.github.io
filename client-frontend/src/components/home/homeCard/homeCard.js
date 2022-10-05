@@ -1,5 +1,5 @@
 import React, {useState, useContext} from "react";
-import { AxiosContext } from "../Context/AxiosContext";
+import { AxiosContext } from "../../../context/AxiosContext";
 
 const HomeCard = (props) => {
     const [homecard, setHomeCard] = useState({
