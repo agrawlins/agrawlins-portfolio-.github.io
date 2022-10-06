@@ -1,6 +1,7 @@
 .historyViewer {
     color: white;
-    height: 650px;
+    height: 500px;
+    margin: 5%;
     width: 20%;
     background: linear-gradient(0deg, #151932   1.18%, rgb(55, 52, 92) 100%);
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
@@ -8,9 +9,24 @@
     padding: 10px;
   }
 
+  .historyViewer > label {
+    display: flex;
+    position: fixed;
+    width: 17%;
+    background: linear-gradient(0deg, #151932   1.18%, rgb(55, 52, 92) 100%);
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+  }
+
+  .historyDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+
   .ul {
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: hidden;
     padding-left: 0;
     padding-right: 35px;
   }
@@ -29,7 +45,7 @@
     color: white;
     display: flex;
     position: relative;
-    height: 650px;
+    height: 500px;
     width: 20%;
     background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
@@ -38,7 +54,7 @@
     flex-direction: column;
     justify-content: center;
     list-style-type: none;
-    margin: 0 25%;
+    margin: 5% 25%;
   }
 
   .history--list > li {

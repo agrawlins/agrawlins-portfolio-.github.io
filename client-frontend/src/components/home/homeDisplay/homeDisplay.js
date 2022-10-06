@@ -8,20 +8,21 @@ const HomeDisplay = () => {
 
     return (
         <main className="homeDisplay">
+            <div></div>
             <div>
-                <button className="ugly--list" onClick={() => navigate("/history")}>
+                <button className="home--list" onClick={() => navigate("/history")}>
                     <HomeCard
                         imgUrl = "https://psychonauts-api.herokuapp.com/images/api/characters/razputin-aquato.png"
                         title = "History"
                     />
                 </button>
-                <button className="ugly--list" onClick={() => navigate("/projects")}>
+                <button className="home--list" onClick={() => navigate("/projects")}>
                     <HomeCard
                         imgUrl = "https://psychonauts-api.herokuapp.com/images/api/clairvoyance.png"
                         title = "Projects"
                     />
                 </button>
-                <button className="ugly--list" onClick={() => navigate("/contact")}>
+                <button className="home--list" onClick={() => navigate("/contact")}>
                     <HomeCard
                         imgUrl = "https://psychonauts-api.herokuapp.com/images/api/characters/ford-cruller.png"
                         title = "Contact"

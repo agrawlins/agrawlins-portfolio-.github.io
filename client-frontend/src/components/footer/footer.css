@@ -2,6 +2,7 @@ footer{
     display: flex;
     position: fixed;
     font-weight: bold;
+    width: 100%;
     bottom: 0;
     justify-content: center;
     align-items: center;

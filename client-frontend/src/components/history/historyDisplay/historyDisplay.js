@@ -25,20 +25,18 @@ const HistoryDisplay = () => {
 
     return (
         <main className="historyDisplay">
-            <div>
-                <div className="history--display">
-                    <h2>{history.title}</h2>
-                    <img src={history.image} placeholder="Image"/>
-                    <br/>
-                    <h3>{history.year}</h3>
-                    {history.description}
-                </div>
-                <div className="historyViewer"> 
-                    <label>Select an Event to Learn More!</label>
-                    <ul className="ul">
-                        {mappedHistoryList}
-                    </ul>
-                </div>
+            <div className="history--display">
+                <h2>{history.title}</h2>
+                <img src={history.image} placeholder="Image"/>
+                <br/>
+                <h3>{history.year}</h3>
+                {history.description}
+            </div>
+            <div className="historyViewer"> 
+                <label>Select an Event to Learn More!</label>
+                <ul className="ul">
+                    {mappedHistoryList}
+                </ul>
             </div>
         </main>
     )
