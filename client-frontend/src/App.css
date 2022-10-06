@@ -1,5 +1,7 @@
 .App {
     padding: 0;
+    filter:grayscale(50%);
+    overflow: auto;
 }
 
 .Routes {

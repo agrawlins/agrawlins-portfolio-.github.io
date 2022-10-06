@@ -1,6 +1,4 @@
 .contact-body{
-    display: flex;
-    flex-direction: column;
     background: url(../../images/mugshots/Home\ Page\ Mugshot.jpg);
     background-size: cover;
 }

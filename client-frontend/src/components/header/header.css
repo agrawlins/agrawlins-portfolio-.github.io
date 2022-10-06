@@ -7,7 +7,7 @@
      overflow-y: hidden;
      height: 65px;
      width: 100%;
-     background: linear-gradient(5deg, #2c0f2b 1.18%, rgb(24, 78, 67) 75%);
+     background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
      box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
      color: white;
  
@@ -27,3 +27,9 @@
      font-size: 0.75rem;
      font-weight: 500;
    }
+
+.link {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}

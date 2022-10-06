@@ -1,22 +1,22 @@
 import React, {useState, useContext, useEffect} from "react"
 import HistoryCard from "../historyCard/historyCard"
 import { AxiosContext } from "../../../context/AxiosContext";
+import './historyDisplay.css'
 
-const HistoriesDisplay = () => {
+const HistoryDisplay = () => {
     
-    const {character, historiesList, GetAllHistories} = useContext(AxiosContext) 
+    const {history, historiesList, GetAllHistories} = useContext(AxiosContext) 
 
     useEffect(() => {GetAllHistories()}, [])
 
-    const mappedHistoryList = historiesList.map((param1) => {
+    const mappedHistoryList = historiesList.map((history) => {
     return(
         <div>
             <ul>
-                <HistoryCard {...param1} 
-                    key = {param1.id}
-                    id = {param1.id}
+                <HistoryCard {...history} 
+                    key = {history.id}
+                    id = {history.id}
                     data = {historiesList}
-                    img = {param1.image}
                 />
             </ul>
         </div>
@@ -24,17 +24,16 @@ const HistoriesDisplay = () => {
     })
 
     return (
-        <main className="homeDisplay">
+        <main className="historyDisplay">
             <div>
-                <div className="ugly--display">
-                    <h2>{character.title}</h2>
-                    <img src={character.image} placeholder="Image"/>
+                <div className="history--display">
+                    <h2>{history.title}</h2>
+                    <img src={history.image} placeholder="Image"/>
                     <br/>
-                    <h3>{character.year}</h3>
-                    {character.description}
-                    <br/>
+                    <h3>{history.year}</h3>
+                    {history.description}
                 </div>
-                <div className="uglyViewer"> 
+                <div className="historyViewer"> 
                     <label>Select an Event to Learn More!</label>
                     <ul className="ul">
                         {mappedHistoryList}
@@ -45,4 +44,4 @@ const HistoriesDisplay = () => {
     )
 }
 
-export default HistoriesDisplay
+export default HistoryDisplay

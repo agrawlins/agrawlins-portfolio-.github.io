@@ -1,18 +1,21 @@
 import React, {useState, useContext} from "react";
 import { AxiosContext } from "../../../context/AxiosContext";
+import './historyCard.css'
 
 const HistoryCard = (props) => {
-    const [historyCard, setHistoryCard] = useState({
-        title: props.title,
-        image: props.image,
-        description: props.description,
-    })
-    const {GetOneCharacter} = useContext(AxiosContext)
+  const {id, title, image, year, description} = props
+  const [historyCard, setHistoryCard] = useState({
+      title: title,
+      image: image,
+      year: year,
+      description: description,
+  })
+  const {GetOneHistory} = useContext(AxiosContext)
 
   return(
-    <div className="ugly--list" >
-        <button key={props.id} id ={props.id} onClick={() => {GetOneCharacter(historyCard)}}>
-            <img src={historyCard.image} className="ugly--image"/>
+    <div className="history--list" >
+        <button key={id} id={id} onClick={() => {GetOneHistory(historyCard)}}>
+            <img src={historyCard.image} className="history--image"/>
         </button>
     </div>    
   )
