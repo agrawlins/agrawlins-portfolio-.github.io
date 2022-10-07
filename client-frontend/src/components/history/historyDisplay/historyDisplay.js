@@ -12,33 +12,35 @@ const HistoryDisplay = () => {
     const mappedHistoryList = historiesList.map((history) => {
     return(
         <div>
-            <ul>
-                <HistoryCard {...history} 
-                    key = {history.id}
-                    id = {history.id}
-                    data = {historiesList}
-                />
-            </ul>
+            <HistoryCard {...history} 
+                key = {history.id}
+                id = {history.id}
+                data = {historiesList}
+            />
         </div>
         )
     })
 
     return (
-        <main className="historyDisplay">
-            <div className="history--display">
-                <h2>{history.title}</h2>
-                <img src={history.image} placeholder="Image"/>
-                <br/>
-                <h3>{history.year}</h3>
-                {history.description}
-            </div>
-            <div className="historyViewer"> 
-                <label>Select an Event to Learn More!</label>
-                <ul className="ul">
-                    {mappedHistoryList}
-                </ul>
-            </div>
-        </main>
+        <div className="body">
+            <main className="historyDisplay">
+                <div className="historyViewer"> 
+                    <h3 className="historyHeader">Select an Event to Learn More!</h3>
+                    <div className="historyInfo">
+                        <div className="history--display">
+                            <h2>{history.title}</h2>
+                            <img src={history.image} placeholder="Image"/>
+                            <br/>
+                            <h3>{history.year}</h3>
+                            {history.description}
+                        </div>
+                        <ul className="ul">
+                            {mappedHistoryList}
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
     )
 }
 

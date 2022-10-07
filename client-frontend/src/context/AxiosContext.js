@@ -8,6 +8,7 @@ const AxiosContextProvider = (props) => {
     const {title, image, year, description, children} = props
 
     const [history, setHistory] = useState({
+        key: {},
         title: "Birth of a Legend",
         image: "https://images.unsplash.com/photo-1596252732610-fce5ac542f8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
         year: 1993,

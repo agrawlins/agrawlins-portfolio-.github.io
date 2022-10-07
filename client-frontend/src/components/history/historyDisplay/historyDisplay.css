@@ -1,18 +1,32 @@
 .historyViewer {
     color: white;
-    height: 500px;
+    height: 775px;
     margin: 5%;
-    width: 20%;
+    margin-left: 50%;
+    width: 50%;
     background: linear-gradient(0deg, #151932   1.18%, rgb(55, 52, 92) 100%);
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
     border-radius: 30px;
-    padding: 10px;
   }
 
-  .historyViewer > label {
+  .body {
+    background: url('../../../images/mugshots/History\ Page\ Mugshot.jpg');
+    background-size: cover;
+}
+
+  .historyHeader {
+    margin: 5%;
+  }
+
+  .historyInfo {
     display: flex;
-    position: fixed;
-    width: 17%;
+  }
+
+  .historyViewer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .historyViewer > h3 {
     background: linear-gradient(0deg, #151932   1.18%, rgb(55, 52, 92) 100%);
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
   }
@@ -21,18 +35,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
   }
 
   .ul {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    padding-left: 0;
-    padding-right: 35px;
-  }
-
-  .ul::-webkit-scrollbar {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 650px;
+    padding: 20px;
   }
 
   .history {
@@ -46,7 +57,7 @@
     display: flex;
     position: relative;
     height: 500px;
-    width: 20%;
+    width: 50%;
     background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
     border-radius: 30px;

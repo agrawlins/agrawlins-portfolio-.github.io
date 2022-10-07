@@ -26,9 +26,9 @@ historyRouter.get("/:historyId", (req, res, next) => {
     })
 })
 
-//GET BY CATEGORY
-historyRouter.get("/search/category", (req, res, next) => {
-    History.find({category: req.query.category}, (err, histories) => {
+//GET BY TITLE
+historyRouter.get("/search/title", (req, res, next) => {
+    History.find({title: req.query.title}, (err, histories) => {
         if(err){
             res.status(500)
             return next(err)
