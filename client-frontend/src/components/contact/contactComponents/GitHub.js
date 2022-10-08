@@ -3,7 +3,7 @@ import GitHubPic from "../../../images/logos/github-square-512.webp";
 const GitHub = () => {
     return(
         <a href="https://github.com/agrawlins?tab=repositories" target="_blank">
-            <button>
+            <button className="contact-button">
                 <img src={GitHubPic} className="GitHubPic"></img>
             </button>
         </a>

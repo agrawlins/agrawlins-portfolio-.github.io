@@ -48,3 +48,22 @@
     list-style-type: none;
     margin: 0;
   }
+
+.history-btn {
+  background-color: rgba(210, 210, 210, 0.75);
+  border-width: 0px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+}
+
+.history-btn > img {
+  opacity: 95%;
+}
+
+.history-opn {
+  color: white;
+  background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
+  border-width: 0px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+}

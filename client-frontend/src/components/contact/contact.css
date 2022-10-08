@@ -18,14 +18,14 @@ img {
     border-radius: 50%;
 }
 
-button {
+.contact-button {
     background-color: rgba(210, 210, 210, 0.75);
     border-width: 0px;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
     border-radius: 50%;
 }
 
-button > img {
+.contact-button > img {
     opacity: 95%;
 }
 

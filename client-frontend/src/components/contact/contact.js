@@ -15,7 +15,6 @@ const Contact = () => {
                 <h1>Adam Rawlins</h1>
                 <h2>Full-Stack Web Developer</h2>
                 <h3>Check Out My Original <a href="https://agrawlins.github.io">Page</a>:</h3>
-                
             </header>
             <Email />
             <div className="linkButtons">

@@ -4,6 +4,7 @@ import './historyCard.css'
 
 const HistoryCard = (props) => {
   const {id, title, image, year, description} = props
+  const [editToggle, setEditToggle] = useState(false)
   const [historyCard, setHistoryCard] = useState({
       title: title,
       image: image,
@@ -14,9 +15,22 @@ const HistoryCard = (props) => {
 
   return(
     <div className="history--list" >
-        <button key={id} id={id} onClick={() => {GetOneHistory(historyCard)}}>
+        { !editToggle ? 
+        <>
+          <button className="history-btn" onClick={() => setEditToggle(prevToggle => !prevToggle)}>
             <img src={historyCard.image} className="history--image"/>
-        </button>
+          </button>
+        </>
+        :
+        <>   
+          <button className="history-opn" onClick={() => setEditToggle(prevToggle => !prevToggle)}>
+            <h1>{title}</h1>
+            <p>{year}</p>
+            <img src={image}></img> 
+            <p>{description}</p>
+          </button>
+        </>
+        }
     </div>    
   )
 }
