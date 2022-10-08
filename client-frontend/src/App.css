@@ -1,9 +1,11 @@
 .App {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     filter:grayscale(50%);
-    overflow: auto;
 }
 
 .Routes {
     margin-top: 5%;
+    margin-bottom: 5%;
 }

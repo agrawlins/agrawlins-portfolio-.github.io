@@ -11,9 +11,12 @@ const projectSchema = new Schema({
         type: String,
         required: true
     },
-    code: {
+    codeURL: {
         type: String,
-        maximumValue: 999,
+        required: true
+    },
+    image: {
+        type: String,
         required: true
     }
 })

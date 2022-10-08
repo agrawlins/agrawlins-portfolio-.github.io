@@ -3,7 +3,6 @@ import ProjectCard from "../projectCard/projectCard"
 import { AxiosContext } from "../../../context/AxiosContext";
 
 const ProjectDisplay = () => {
-    
     const {project, projectsList, GetAllProjects} = useContext(AxiosContext) 
 
     useEffect(() => {GetAllProjects()}, [])
