@@ -1,5 +1,6 @@
 import React, {useState, useContext} from "react";
 import { AxiosContext } from "../../../context/AxiosContext";
+import './homeCard.css'
 
 const HomeCard = (props) => {
     const [homecard, setHomeCard] = useState({

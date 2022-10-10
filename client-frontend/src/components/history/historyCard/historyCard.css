@@ -49,6 +49,18 @@
     margin: 0;
   }
 
+.history--image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.history-opn-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+
 .history-btn {
   background-color: rgba(210, 210, 210, 0.75);
   border-width: 0px;

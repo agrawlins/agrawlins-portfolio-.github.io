@@ -4,7 +4,7 @@ const Email = () => {
     return(
         <a href="mailto:agrawlins@gmail.com" className="Email">
             <button className="EmailButton">
-                <img src={EmailIcon} className="EmailPic"></img>
+                <img src={EmailIcon} className="contact-img"></img>
                 <h2>Email</h2>
             </button>
         </a>

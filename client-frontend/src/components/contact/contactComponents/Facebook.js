@@ -4,7 +4,7 @@ const Facebook = () => {
     return(
         <a href="https://www.facebook.com/adam.rawlins.75" target="_blank">
             <button className="contact-button">
-                <img src={FacebookPic} className="FacebookPic"></img>
+                <img src={FacebookPic} className="contact-img"></img>
             </button>
         </a>
     )

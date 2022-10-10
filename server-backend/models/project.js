@@ -11,7 +11,7 @@ const projectSchema = new Schema({
         type: String,
         required: true
     },
-    codeURL: {
+    gitHub: {
         type: String,
         required: true
     },

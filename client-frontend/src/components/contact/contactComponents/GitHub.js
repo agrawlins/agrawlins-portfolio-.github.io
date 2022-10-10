@@ -4,7 +4,7 @@ const GitHub = () => {
     return(
         <a href="https://github.com/agrawlins?tab=repositories" target="_blank">
             <button className="contact-button">
-                <img src={GitHubPic} className="GitHubPic"></img>
+                <img src={GitHubPic} className="contact-img"></img>
             </button>
         </a>
     )

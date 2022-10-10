@@ -1,6 +1,7 @@
 .contact-body{
     background: url(../../images/mugshots/Home\ Page\ Mugshot.jpg);
     background-size: cover;
+    height: 975px;
 }
 
 .linkButtons {
@@ -12,7 +13,7 @@
     padding-bottom: 5%;
   }
 
-img {
+.contact-img {
     height: 50px;
     width: 50px;
     border-radius: 50%;

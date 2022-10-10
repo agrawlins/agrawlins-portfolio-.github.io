@@ -26,7 +26,7 @@ const HistoryCard = (props) => {
           <button className="history-opn" onClick={() => setEditToggle(prevToggle => !prevToggle)}>
             <h1>{title}</h1>
             <p>{year}</p>
-            <img src={image}></img> 
+            <img src={image} className='history-opn-img'></img> 
             <p>{description}</p>
           </button>
         </>

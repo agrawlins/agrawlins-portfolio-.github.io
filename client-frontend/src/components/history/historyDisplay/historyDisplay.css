@@ -10,7 +10,7 @@
   }
 
   .body {
-    background: url('../../../images/mugshots/History\ Page\ Mugshot.jpg');
+    background: url('../../../images/mugshots/Projects\ Page\ Mugshot.jpg');
     background-size: cover;
 }
 
@@ -42,7 +42,7 @@
     flex-direction: column;
     overflow-y: auto;
     overflow-x: auto;
-    height: 650px;
+    height: 550px;
     padding: 20px;
   }
 

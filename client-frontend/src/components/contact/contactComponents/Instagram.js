@@ -4,7 +4,7 @@ const Instagram = () => {
     return(
         <a href="https://www.instagram.com/adam.rawlins.75/" target="_blank">
             <button className="contact-button">
-                <img src={InstagramPic} className="InstagramPic" target="_blank"></img>
+                <img src={InstagramPic} className="contact-img" target="_blank"></img>
             </button>
         </a>
     )

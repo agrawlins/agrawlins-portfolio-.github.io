@@ -24,6 +24,7 @@ const HistoryDisplay = () => {
         <div className="body">
             <main className="historyDisplay">
                 <div className="historyViewer"> 
+                    <h1>History</h1>
                     <h3 className="historyHeader">Select an Event to Learn More!</h3>
                     <ul className="ul">
                         {mappedHistoryList}

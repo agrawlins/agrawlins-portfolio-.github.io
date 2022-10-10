@@ -1,45 +1,38 @@
 import React, {useState, useContext, useEffect} from "react"
 import ProjectCard from "../projectCard/projectCard"
 import { AxiosContext } from "../../../context/AxiosContext";
+import './projectDisplay.css'
 
-const ProjectDisplay = () => {
-    const {project, projectsList, GetAllProjects} = useContext(AxiosContext) 
+const HistoryDisplay = () => {
+    const {history, projectsList, GetAllProjects} = useContext(AxiosContext) 
 
     useEffect(() => {GetAllProjects()}, [])
 
-    const mappedProjectList = projectsList.map((project) => {
+    const mappedProjectsList = projectsList.map((history) => {
     return(
         <div>
-            <ul>
-                <ProjectCard {...project} 
-                    key = {project.id}
-                    id = {project.id}
-                    data = {projectsList}
-                />
-            </ul>
+            <ProjectCard {...history} 
+                key = {history.id}
+                id = {history.id}
+                data = {projectsList}
+            />
         </div>
         )
     })
 
     return (
-        <main className="homeDisplay">
-            <div>
-                <div className="ugly--display">
-                    <h2>{project.title}</h2>
-                    <img src={project.image} placeholder="Image"/>
-                    <br/>
-                    <h3>{project.year}</h3>
-                    {project.description}
-                </div>
-                <div className="uglyViewer"> 
-                    <label>Select an Event to Learn More!</label>
+        <div className="body">
+            <main className="historyDisplay">
+                <div className="projectViewer"> 
+                    <h1>Projects</h1>
+                    <h3 className="projectHeader">Select a Project to Learn More!</h3>
                     <ul className="ul">
-                        {mappedProjectList}
+                        {mappedProjectsList}
                     </ul>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     )
 }
 
-export default ProjectDisplay
+export default HistoryDisplay
