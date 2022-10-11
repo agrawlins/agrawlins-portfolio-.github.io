@@ -1,42 +1,90 @@
-.contact-body{
-    background: url(../../images/mugshots/Home\ Page\ Mugshot.jpg);
-    background-size: cover;
-    height: 975px;
+@media only screen and (min-width: 768px) {
+    .contact-body{
+        background: url(../../images/mugshots/Home\ Page\ Mugshot.jpg);
+        background-size: cover;
+        height: 975px;
+    }
+    
+    .linkButtons {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    
+    .contact-img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .contact-button {
+        background-color: rgba(210, 210, 210, 0.75);
+        border-width: 0px;
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+        border-radius: 50%;
+    }
+    
+    .contact-button > img {
+        opacity: 95%;
+    }
+    
+    .EmailButton {
+        display: flex;
+        justify-content: center;
+        border: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+        height: 60px;
+        width: 50%;
+        margin-left: 25%;
+      }
 }
 
-.linkButtons {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-.contact-img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+@media only screen and (max-width: 300px) {
+    .contact-body{
+        background: url(../../images/mugshots/Home\ Page\ Mugshot.jpg);
+        background-size: cover;
+        height: 975px;
+    }
+    
+    .linkButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    
+    .contact-img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .contact-button {
+        background-color: rgba(210, 210, 210, 0.75);
+        border-width: 0px;
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+        border-radius: 50%;
+    }
+    
+    .contact-button > img {
+        opacity: 95%;
+    }
+    
+    .EmailButton {
+        display: flex;
+        justify-content: center;
+        border: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+        height: 60px;
+        width: 50%;
+        margin-left: 25%;
+      }
 }
-
-.contact-button {
-    background-color: rgba(210, 210, 210, 0.75);
-    border-width: 0px;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
-    border-radius: 50%;
-}
-
-.contact-button > img {
-    opacity: 95%;
-}
-
-.EmailButton {
-    display: flex;
-    justify-content: center;
-    border: 0px;
-    border-radius: 15px;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
-    height: 60px;
-    width: 50%;
-    margin-left: 25%;
-  }

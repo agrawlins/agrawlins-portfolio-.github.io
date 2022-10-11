@@ -1,50 +1,106 @@
-.main {
-    height: 975px;
-    background: url('../../../images/mugshots/Home\ Page\ Mugshot.jpg');
-    background-size: cover;
-}
-
-.homeTitle {
-    color: white;
-    margin: 5%;
-    background-color: rgb(47, 47, 47);
-    opacity: 50%;
-}
-.homeDisplay {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 45%;
-    margin-left: 50%;
-  }
-
-.homeDisplay > div {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.home--image {
-    border-radius: 15px;
-}
-
-.home--list {
-    display: flex;
-    width: 15%;
-    margin: 10px;
-    padding: 10px;
-    flex-direction: column;
-    background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
-    border-radius: 20px;
-    color: white;
-}
-
-.home--list > li {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    list-style-type: none;
+@media only screen and (min-width: 768px) {
+    .main {
+        height: 975px;
+        background: url('../../../images/mugshots/Home\ Page\ Mugshot.jpg');
+        background-size: cover;
+    }
     
+    .homeTitle {
+        color: white;
+        margin: 5%;
+        background-color: rgb(47, 47, 47);
+        opacity: 50%;
+    }
+    .homeDisplay {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 45%;
+        margin-left: 50%;
+      }
+    
+    .homeDisplay > div {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .home--image {
+        border-radius: 15px;
+    }
+    
+    .home--list {
+        display: flex;
+        width: 15%;
+        margin: 10px;
+        padding: 10px;
+        flex-direction: column;
+        background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+        border-radius: 20px;
+        color: white;
+    }
+    
+    .home--list > li {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .main {
+        height: 975px;
+        background: url('../../../images/mugshots/Home\ Page\ Mugshot.jpg');
+        background-size: cover;
+    }
+    
+    .homeTitle {
+        color: white;
+        font-size: medium;
+        margin: 5%;
+        margin-top: 25%;
+        background-color: rgb(47, 47, 47);
+        opacity: 50%;
+    }
+    .homeDisplay {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+      }
+    
+    .homeDisplay > div {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .home--image {
+        border-radius: 15px;
+    }
+    
+    .home--list {
+        display: flex;
+        width: 90%;
+        margin: 5px;
+        padding: 10px;
+        flex-direction: column;
+        background: linear-gradient(0deg, #151932  1.18%, rgb(55, 52, 92) 100%);
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.9);
+        border-radius: 20px;
+        color: white;
+    }
+    
+    .home--list > li {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        
+    }
 }
