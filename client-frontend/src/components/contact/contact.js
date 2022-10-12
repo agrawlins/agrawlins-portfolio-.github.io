@@ -14,7 +14,7 @@ const Contact = () => {
             <header className="Contact-Header">
                 <h1>Adam Rawlins</h1>
                 <h2>Full-Stack Web Developer</h2>
-                <h3>Check Out My Original <a href="https://agrawlins.github.io">Page</a>:</h3>
+                <h3><a href="https://agrawlins.github.io" className="github-link">Check Out My Original Page</a>:</h3>
             </header>
             <Email />
             <div className="linkButtons">

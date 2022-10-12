@@ -1,4 +1,16 @@
 @media only screen and (min-width: 768px) {
+    .Contact-Header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        background-color: rgb(47, 47, 47);
+        color: white;
+        padding-left: 5%;
+        opacity: 50%;
+    }
+
     .contact-body{
         background: url(../../images/mugshots/Home\ Page\ Mugshot.jpg);
         background-size: cover;
@@ -41,6 +53,10 @@
         width: 50%;
         margin-left: 25%;
       }
+
+    .Email {
+        text-decoration: none;
+    }
 }
 
 @media only screen and (max-width: 300px) {
