@@ -94,6 +94,7 @@
     .body {
       background: url('../../../images/mugshots/History\ Page\ Mugshot.jpg');
       background-size: cover;
+      min-height: 100vh;
   }
   
     .historyHeader {
