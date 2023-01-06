@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.41052a09.css",
+    "main.js": "/static/js/main.d311dc2e.js",
+    "static/media/Projects Page Mugshot.jpg": "/static/media/Projects Page Mugshot.ccecc0afeb548983f3ab.jpg",
+    "static/media/Home Page Mugshot.jpg": "/static/media/Home Page Mugshot.a564367525181ae71970.jpg",
+    "static/media/History Page Mugshot.jpg": "/static/media/History Page Mugshot.927acb96137e7e18855d.jpg",
+    "static/media/Home Page Thumbnail.jpg": "/static/media/Home Page Thumbnail.34e6d12bd0280a895abf.jpg",
+    "static/media/twitter-pic.png": "/static/media/twitter-pic.9204803239e33fd7d9b3.png",
+    "static/media/facebook-logo-png.png": "/static/media/facebook-logo-png.15d8e86c74427e6386ad.png",
+    "static/media/YouTube-pic.webp": "/static/media/YouTube-pic.622d20fd34a880b9355c.webp",
+    "static/media/email-icon-vector-illustration.jpg": "/static/media/email-icon-vector-illustration.88d8822943ececa6a08d.jpg",
+    "static/media/github-square-512.webp": "/static/media/github-square-512.fe57381b1ece188c77cb.webp",
+    "index.html": "/index.html",
+    "main.41052a09.css.map": "/static/css/main.41052a09.css.map",
+    "main.d311dc2e.js.map": "/static/js/main.d311dc2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41052a09.css",
+    "static/js/main.d311dc2e.js"
+  ]
+}
